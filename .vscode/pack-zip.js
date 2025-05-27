@@ -9,8 +9,10 @@ let readmeDotMd = path.join(__dirname, '../readme.md');
 let changelogDotMd = path.join(__dirname, '../changelogs.md');
 
 if (!fs.existsSync(readmeDotMd)) {
-  readmeDotMd = path.join(__dirname, '../README.md');
+	readmeDotMd = path.join(__dirname, '../README.md');
 }
+
+const pluginMeta = JSON.parse(fs.readFileSync(pluginJSON, 'utf8'));
 
 // create zip file of dist folder
 
@@ -23,27 +25,39 @@ zip.file('changelogs.md', fs.readFileSync(changelogDotMd));
 
 loadFile('', distFolder);
 
+if (pluginMeta.files && Array.isArray(pluginMeta.files)) {
+	for (const relativePath of pluginMeta.files) {
+		const filePath = path.join(__dirname, '..', relativePath);
+		if (fs.existsSync(filePath)) {
+			const fileContent = fs.readFileSync(filePath);
+			const filename = path.basename(relativePath);
+			zip.file(filename, fileContent);
+		} else {
+			console.warn(`File listed in plugin.json not found: ${relativePath}`);
+		}
+	}
+}
+
 zip
-  .generateNodeStream({ type: 'nodebuffer', streamFiles: true })
-  .pipe(fs.createWriteStream(path.join(__dirname, '../dist.zip')))
-  .on('finish', () => {
-    console.log('Plugin dist.zip written.');
-  });
+	.generateNodeStream({ type: 'nodebuffer', streamFiles: true })
+	.pipe(fs.createWriteStream(path.join(__dirname, '../dist.zip')))
+	.on('finish', () => {
+		console.log('Plugin dist.zip written.');
+	});
 
 function loadFile(root, folder) {
-  const distFiles = fs.readdirSync(folder);
-  distFiles.forEach((file) => {
+	const distFiles = fs.readdirSync(folder);
+	distFiles.forEach(file => {
+		const stat = fs.statSync(path.join(folder, file));
 
-    const stat = fs.statSync(path.join(folder, file));
+		if (stat.isDirectory()) {
+			zip.folder(file);
+			loadFile(path.join(root, file), path.join(folder, file));
+			return;
+		}
 
-    if (stat.isDirectory()) {
-      zip.folder(file);
-      loadFile(path.join(root, file), path.join(folder, file));
-      return;
-    }
-
-    if (!/LICENSE.txt/.test(file)) {
-      zip.file(path.join(root, file), fs.readFileSync(path.join(folder, file)));
-    }
-  });
+		if (!/LICENSE.txt/.test(file)) {
+			zip.file(path.join(root, file), fs.readFileSync(path.join(folder, file)));
+		}
+	});
 }
