@@ -1,3 +1,8 @@
+/*
+ * This file is for more flexible creation of svelte.json.
+ * Run ```node exist.js``` to create ```svelte.json```
+ */
+
 const fs = require('fs');
 const path = require('path');
 
