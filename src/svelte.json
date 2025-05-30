@@ -2,667 +2,151 @@
   {
     "caption": "on:click",
     "value": "on:click",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "on:submit",
     "value": "on:submit",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "bind:value",
     "value": "bind:value",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "bind:group",
     "value": "bind:group",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "bind:checked",
     "value": "bind:checked",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "bind:this",
     "value": "bind:this",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "slot",
     "value": "slot",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "slot:name",
     "value": "slot:name",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "transition:fade",
     "value": "transition:fade",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "transition:fly",
     "value": "transition:fly",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "transition:slide",
     "value": "transition:slide",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "in:fade",
     "value": "in:fade",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "out:fade",
     "value": "out:fade",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "animate:flip",
     "value": "animate:flip",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "class:active",
     "value": "class:active",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "let:props",
     "value": "let:props",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "#if",
     "value": "#if",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "#each",
     "value": "#each",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "#await",
     "value": "#await",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "svelte:head",
     "value": "svelte:head",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "svelte:options",
     "value": "svelte:options",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "svelte:window",
     "value": "svelte:window",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "svelte:body",
     "value": "svelte:body",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "svelte:fragment",
     "value": "svelte:fragment",
-    "meta": "svelte-core",
+    "meta": "SvelteKit: core",
     "score": 1000
   },
   {
     "caption": "svelte:element",
     "value": "svelte:element",
-    "meta": "svelte-core",
-    "score": 1000
-  },
-  {
-    "caption": "string",
-    "value": "string",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "number",
-    "value": "number",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "boolean",
-    "value": "boolean",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "any",
-    "value": "any",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "unknown",
-    "value": "unknown",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "void",
-    "value": "void",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Array<T>",
-    "value": "Array<T>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Record<K, V>",
-    "value": "Record<K, V>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Writable<T>",
-    "value": "Writable<T>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Readable<T>",
-    "value": "Readable<T>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "interface",
-    "value": "interface",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "type",
-    "value": "type",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "implements",
-    "value": "implements",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Partial<T>",
-    "value": "Partial<T>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Pick<T, K>",
-    "value": "Pick<T, K>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Omit<T, K>",
-    "value": "Omit<T, K>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "ReturnType<T>",
-    "value": "ReturnType<T>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "Parameters<T>",
-    "value": "Parameters<T>",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "get",
-    "value": "get",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "derived",
-    "value": "derived",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "writable",
-    "value": "writable",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "readable",
-    "value": "readable",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "script lang=\"ts\"",
-    "value": "script lang=\"ts\"",
-    "meta": "typescript",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLElement",
-    "value": "HTMLElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLDivElement",
-    "value": "HTMLDivElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLSpanElement",
-    "value": "HTMLSpanElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLInputElement",
-    "value": "HTMLInputElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLButtonElement",
-    "value": "HTMLButtonElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLFormElement",
-    "value": "HTMLFormElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLAnchorElement",
-    "value": "HTMLAnchorElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLCanvasElement",
-    "value": "HTMLCanvasElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "HTMLImageElement",
-    "value": "HTMLImageElement",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "CanvasRenderingContext2D",
-    "value": "CanvasRenderingContext2D",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "CanvasRenderingContext",
-    "value": "CanvasRenderingContext",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "MouseEvent",
-    "value": "MouseEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "KeyboardEvent",
-    "value": "KeyboardEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "FocusEvent",
-    "value": "FocusEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "InputEvent",
-    "value": "InputEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "PointerEvent",
-    "value": "PointerEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "TouchEvent",
-    "value": "TouchEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Event",
-    "value": "Event",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "DragEvent",
-    "value": "DragEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "CustomEvent",
-    "value": "CustomEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "WheelEvent",
-    "value": "WheelEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "ClipboardEvent",
-    "value": "ClipboardEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "UIEvent",
-    "value": "UIEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "AnimationEvent",
-    "value": "AnimationEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "TransitionEvent",
-    "value": "TransitionEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "AudioContext",
-    "value": "AudioContext",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "MediaStream",
-    "value": "MediaStream",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "WebSocket",
-    "value": "WebSocket",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Worker",
-    "value": "Worker",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "SharedWorker",
-    "value": "SharedWorker",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "MessageEvent",
-    "value": "MessageEvent",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Document",
-    "value": "Document",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Window",
-    "value": "Window",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Node",
-    "value": "Node",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Text",
-    "value": "Text",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Comment",
-    "value": "Comment",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Element",
-    "value": "Element",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "EventTarget",
-    "value": "EventTarget",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "FormData",
-    "value": "FormData",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Blob",
-    "value": "Blob",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "File",
-    "value": "File",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "FileList",
-    "value": "FileList",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "URL",
-    "value": "URL",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "URLSearchParams",
-    "value": "URLSearchParams",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Response",
-    "value": "Response",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Request",
-    "value": "Request",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Headers",
-    "value": "Headers",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "AbortController",
-    "value": "AbortController",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "ReadableStream",
-    "value": "ReadableStream",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "WritableStream",
-    "value": "WritableStream",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "TransformStream",
-    "value": "TransformStream",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "MutationObserver",
-    "value": "MutationObserver",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "ResizeObserver",
-    "value": "ResizeObserver",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "IntersectionObserver",
-    "value": "IntersectionObserver",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Performance",
-    "value": "Performance",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "History",
-    "value": "History",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Location",
-    "value": "Location",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Navigator",
-    "value": "Navigator",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "Screen",
-    "value": "Screen",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "DOMRect",
-    "value": "DOMRect",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "DOMTokenList",
-    "value": "DOMTokenList",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "TextEncoder",
-    "value": "TextEncoder",
-    "meta": "dom-types",
-    "score": 1000
-  },
-  {
-    "caption": "TextDecoder",
-    "value": "TextDecoder",
-    "meta": "dom-types",
+    "meta": "SvelteKit: core",
     "score": 1000
   }
 ]

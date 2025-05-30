@@ -6,13 +6,11 @@ A lightweight Acode plugin that provides auto-completion for Svelte components, 
 
 🚀 Usage
 
-1. Open a Svelte project in Acode (i.e., a folder containing svelte.config.js or svelte.config.cjs).
+1. Open any .svelte file.
 
-2. Open any .svelte file.
+2. The plugin will automatically detect that you are in a Svelte project and activate the Svelte completer.
 
-3. The plugin will automatically detect that you are in a Svelte project and activate the Svelte completer.
-
-4. Start typing in the editor, and you’ll see Svelte-specific completions.
+3. Start typing in the editor, and you’ll see Svelte-specific completions.
 
 ---
 

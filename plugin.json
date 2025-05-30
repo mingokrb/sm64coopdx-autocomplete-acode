@@ -2,14 +2,18 @@
 	"id": "knxtr.svelte.autocomplete",
 	"name": "Svelte Autocomplete",
 	"main": "main.js",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"readme": "readme.md",
 	"icon": "icon.png",
-	"files": ["src/svelte.json"],
+	"files": [
+	  "src/javascript.json",
+	  "src/svelte.json",
+	  "src/typescript.json"
+	],
 	"minVersionCode": 290,
 	"license": "MIT",
 	"changelogs": "changelogs.md",
-	"keywords": ["svelte", "autocomplete", "sveltekit"],
+	"keywords": ["svelte", "autocomplete", "sveltekit", "typescript", "javascript", "intellisense"],
 	"price": 0,
 	"author": {
 		"name": "KnxTr",

@@ -6,15 +6,18 @@
 const fs = require('fs');
 const path = require('path');
 
-const completions = [];
+const svelte = [];
+const typescript = [];
+const javascript = [];
 
 function addCompletion(
 	caption,
 	value = caption,
 	meta = 'svelte',
+	target = [],
 	score = 1000
 ) {
-	completions.push({ caption, value, meta, score });
+	target.push({ caption, value, meta, score });
 }
 
 // Stage 1: Core Svelte completions
@@ -46,7 +49,9 @@ const svelteCore = [
 	'svelte:element'
 ];
 
-svelteCore.forEach(item => addCompletion(item, item, 'svelte-core'));
+svelteCore.forEach(item =>
+	addCompletion(item, item, 'SvelteKit: core', svelte)
+);
 
 // Stage 2: TypeScript in Svelte
 const tsTypes = [
@@ -75,7 +80,9 @@ const tsTypes = [
 	'script lang="ts"'
 ];
 
-tsTypes.forEach(item => addCompletion(item, item, 'typescript'));
+tsTypes.forEach(item =>
+	addCompletion(item, item, 'Typescript: core', typescript)
+);
 
 const domTypes = [
 	'HTMLElement',
@@ -143,12 +150,175 @@ const domTypes = [
 	'TextDecoder'
 ];
 
-domTypes.forEach(type => addCompletion(type, type, 'dom-types'));
+domTypes.forEach(type =>
+	addCompletion(type, type, 'Typescript: DomType', typescript)
+);
+
+const javascriptCore = [
+	'break',
+	'case',
+	'catch',
+	'class',
+	'const',
+	'continue',
+	'debugger',
+	'default',
+	'delete',
+	'do',
+	'else',
+	'enum',
+	'export',
+	'extends',
+	'finally',
+	'for',
+	'function',
+	'if',
+	'import',
+	'in',
+	'instanceof',
+	'let',
+	'new',
+	'return',
+	'super',
+	'switch',
+	'this',
+	'throw',
+	'try',
+	'typeof',
+	'var',
+	'void',
+	'while',
+	'with',
+	'yield',
+	'await',
+	'as',
+	'implements',
+	'interface',
+	'package',
+	'private',
+	'protected',
+	'public',
+	'static'
+];
+
+javascriptCore.forEach(type =>
+	addCompletion(type, type, 'Javascript: Core', javascript)
+);
+
+const javascriptClasses = [
+	'Array',
+	'ArrayBuffer',
+	'Boolean',
+	'BigInt',
+	'Date',
+	'Error',
+	'EvalError',
+	'Float32Array',
+	'Float64Array',
+	'Function',
+	'Infinity',
+	'Int8Array',
+	'Int16Array',
+	'Int32Array',
+	'Map',
+	'Math',
+	'NaN',
+	'Number',
+	'Object',
+	'Promise',
+	'Proxy',
+	'RangeError',
+	'ReferenceError',
+	'RegExp',
+	'Set',
+	'SharedArrayBuffer',
+	'String',
+	'Symbol',
+	'SyntaxError',
+	'TypeError',
+	'Uint8Array',
+	'Uint8ClampedArray',
+	'Uint16Array',
+	'Uint32Array',
+	'URIError',
+	'WeakMap',
+	'WeakSet'
+];
+
+javascriptClasses.forEach(type =>
+	addCompletion(type, type, 'Javascript: Class', javascript)
+);
+
+const javascriptFunction = [
+	'eval',
+	'isFinite',
+	'isNaN',
+	'parseFloat',
+	'parseInt',
+	'decodeURI',
+	'decodeURIComponent',
+	'encodeURI',
+	'encodeURIComponent',
+	'escape',
+	'unescape'
+];
+
+javascriptFunction.forEach(type =>
+	addCompletion(type, type, 'Javascript: Function', javascript)
+);
+
+const javascriptModules = ['import', 'export', 'default', 'from', 'as'];
+
+javascriptModules.forEach(type =>
+	addCompletion(type, type, 'Javascript: Modules', javascript)
+);
+
+const javascriptConsole = [
+	'console',
+	'console.log',
+	'console.warn',
+	'console.error',
+	'console.info',
+	'console.table'
+];
+
+javascriptConsole.forEach(type =>
+	addCompletion(type, type, 'Javascript: Console', javascript)
+);
+
+javascriptDom = [
+	'window',
+	'document',
+	'navigator',
+	'location',
+	'history',
+	'localStorage',
+	'sessionStorage',
+	'fetch',
+	'setTimeout',
+	'clearTimeout',
+	'setInterval',
+	'clearInterval',
+	'requestAnimationFrame',
+	'cancelAnimationFrame'
+];
+
+javascriptDom.forEach(type =>
+	addCompletion(type, type, 'Javascript: Dom', javascript)
+);
+
+addCompletion('use strict', '"use strict"', 'Javascript: core', javascript);
 
 // Write to file
-const outputFile = path.join(__dirname, 'svelte.json');
-fs.writeFileSync(outputFile, JSON.stringify(completions, null, 2));
+const outputFileSvelte = path.join(__dirname, 'svelte.json');
+const outputFileTypescript = path.join(__dirname, 'typescript.json');
+const outputFileJavascript = path.join(__dirname, 'javascript.json');
+fs.writeFileSync(outputFileSvelte, JSON.stringify(svelte, null, 2));
+fs.writeFileSync(outputFileTypescript, JSON.stringify(typescript, null, 2));
+fs.writeFileSync(outputFileJavascript, JSON.stringify(javascript, null, 2));
 
 console.log(
-	`✔️ Generated ${completions.length} completions to svelte-completions.json`
+	`✔️ Generated ${svelte.length} completions to svelte-completions.json`,
+	`✔️ Generated ${typescript.length} completions to svelte-completions.json`,
+	`✔️ Generated ${javascript.length} completions to svelte-completions.json`
 );

@@ -1,0 +1,710 @@
+[
+  {
+    "caption": "break",
+    "value": "break",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "case",
+    "value": "case",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "catch",
+    "value": "catch",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "class",
+    "value": "class",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "const",
+    "value": "const",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "continue",
+    "value": "continue",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "debugger",
+    "value": "debugger",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "default",
+    "value": "default",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "delete",
+    "value": "delete",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "do",
+    "value": "do",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "else",
+    "value": "else",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "enum",
+    "value": "enum",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "export",
+    "value": "export",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "extends",
+    "value": "extends",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "finally",
+    "value": "finally",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "for",
+    "value": "for",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "function",
+    "value": "function",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "if",
+    "value": "if",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "import",
+    "value": "import",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "in",
+    "value": "in",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "instanceof",
+    "value": "instanceof",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "let",
+    "value": "let",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "new",
+    "value": "new",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "return",
+    "value": "return",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "super",
+    "value": "super",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "switch",
+    "value": "switch",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "this",
+    "value": "this",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "throw",
+    "value": "throw",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "try",
+    "value": "try",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "typeof",
+    "value": "typeof",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "var",
+    "value": "var",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "void",
+    "value": "void",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "while",
+    "value": "while",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "with",
+    "value": "with",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "yield",
+    "value": "yield",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "await",
+    "value": "await",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "as",
+    "value": "as",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "implements",
+    "value": "implements",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "interface",
+    "value": "interface",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "package",
+    "value": "package",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "private",
+    "value": "private",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "protected",
+    "value": "protected",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "public",
+    "value": "public",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "static",
+    "value": "static",
+    "meta": "Javascript: Core",
+    "score": 1000
+  },
+  {
+    "caption": "Array",
+    "value": "Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "ArrayBuffer",
+    "value": "ArrayBuffer",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Boolean",
+    "value": "Boolean",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "BigInt",
+    "value": "BigInt",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Date",
+    "value": "Date",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Error",
+    "value": "Error",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "EvalError",
+    "value": "EvalError",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Float32Array",
+    "value": "Float32Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Float64Array",
+    "value": "Float64Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Function",
+    "value": "Function",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Infinity",
+    "value": "Infinity",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Int8Array",
+    "value": "Int8Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Int16Array",
+    "value": "Int16Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Int32Array",
+    "value": "Int32Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Map",
+    "value": "Map",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Math",
+    "value": "Math",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "NaN",
+    "value": "NaN",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Number",
+    "value": "Number",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Object",
+    "value": "Object",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Promise",
+    "value": "Promise",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Proxy",
+    "value": "Proxy",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "RangeError",
+    "value": "RangeError",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "ReferenceError",
+    "value": "ReferenceError",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "RegExp",
+    "value": "RegExp",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Set",
+    "value": "Set",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "SharedArrayBuffer",
+    "value": "SharedArrayBuffer",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "String",
+    "value": "String",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Symbol",
+    "value": "Symbol",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "SyntaxError",
+    "value": "SyntaxError",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "TypeError",
+    "value": "TypeError",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Uint8Array",
+    "value": "Uint8Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Uint8ClampedArray",
+    "value": "Uint8ClampedArray",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Uint16Array",
+    "value": "Uint16Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "Uint32Array",
+    "value": "Uint32Array",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "URIError",
+    "value": "URIError",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "WeakMap",
+    "value": "WeakMap",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "WeakSet",
+    "value": "WeakSet",
+    "meta": "Javascript: Class",
+    "score": 1000
+  },
+  {
+    "caption": "eval",
+    "value": "eval",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "isFinite",
+    "value": "isFinite",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "isNaN",
+    "value": "isNaN",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "parseFloat",
+    "value": "parseFloat",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "parseInt",
+    "value": "parseInt",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "decodeURI",
+    "value": "decodeURI",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "decodeURIComponent",
+    "value": "decodeURIComponent",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "encodeURI",
+    "value": "encodeURI",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "encodeURIComponent",
+    "value": "encodeURIComponent",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "escape",
+    "value": "escape",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "unescape",
+    "value": "unescape",
+    "meta": "Javascript: Function",
+    "score": 1000
+  },
+  {
+    "caption": "import",
+    "value": "import",
+    "meta": "Javascript: Modules",
+    "score": 1000
+  },
+  {
+    "caption": "export",
+    "value": "export",
+    "meta": "Javascript: Modules",
+    "score": 1000
+  },
+  {
+    "caption": "default",
+    "value": "default",
+    "meta": "Javascript: Modules",
+    "score": 1000
+  },
+  {
+    "caption": "from",
+    "value": "from",
+    "meta": "Javascript: Modules",
+    "score": 1000
+  },
+  {
+    "caption": "as",
+    "value": "as",
+    "meta": "Javascript: Modules",
+    "score": 1000
+  },
+  {
+    "caption": "console",
+    "value": "console",
+    "meta": "Javascript: Console",
+    "score": 1000
+  },
+  {
+    "caption": "console.log",
+    "value": "console.log",
+    "meta": "Javascript: Console",
+    "score": 1000
+  },
+  {
+    "caption": "console.warn",
+    "value": "console.warn",
+    "meta": "Javascript: Console",
+    "score": 1000
+  },
+  {
+    "caption": "console.error",
+    "value": "console.error",
+    "meta": "Javascript: Console",
+    "score": 1000
+  },
+  {
+    "caption": "console.info",
+    "value": "console.info",
+    "meta": "Javascript: Console",
+    "score": 1000
+  },
+  {
+    "caption": "console.table",
+    "value": "console.table",
+    "meta": "Javascript: Console",
+    "score": 1000
+  },
+  {
+    "caption": "window",
+    "value": "window",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "document",
+    "value": "document",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "navigator",
+    "value": "navigator",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "location",
+    "value": "location",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "history",
+    "value": "history",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "localStorage",
+    "value": "localStorage",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "sessionStorage",
+    "value": "sessionStorage",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "fetch",
+    "value": "fetch",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "setTimeout",
+    "value": "setTimeout",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "clearTimeout",
+    "value": "clearTimeout",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "setInterval",
+    "value": "setInterval",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "clearInterval",
+    "value": "clearInterval",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "requestAnimationFrame",
+    "value": "requestAnimationFrame",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "cancelAnimationFrame",
+    "value": "cancelAnimationFrame",
+    "meta": "Javascript: Dom",
+    "score": 1000
+  },
+  {
+    "caption": "use strict",
+    "value": "\"use strict\"",
+    "meta": "Javascript: core",
+    "score": 1000
+  }
+]

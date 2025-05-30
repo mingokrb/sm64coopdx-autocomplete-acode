@@ -1,89 +1,97 @@
 import plugin from '../plugin.json';
+import { loadSvelte, loadTs, loadJs } from './load';
 
-const { editor } = editorManager as any;
-const fs = acode.require('fs');
-const fileList = acode.require('fileList');
-
-let isCompleterAdded = false;
-
-let svelte: any[] = [];
-
-async function loadCompletions(baseUrl: string | undefined): Promise<void> {
-	try {
-		let content = await fs(baseUrl + 'svelte.json');
-		content = await content.readFile('utf-8');
-		svelte = JSON.parse(content);
-	} catch (e) {
-		console.error('[!] Failed to load svelte completions', e);
-	}
-}
-
-const svelteCompleter = {
-	id: 'svelteCompleter',
-	getCompletions(
-		editor: any,
-		session: any,
-		pos: any,
-		prefix: any,
-		callback: any
-	) {
-		if (!prefix) return callback(null, []);
-
-		callback(null, svelte);
-	}
-};
-
-async function svelteStatus(): Promise<void> {
-	let isSvelteProject = false;
-	let isSvelteFile = false;
-
-	try {
-		const files = await fileList();
-		const active = editorManager.activeFile?.name ?? '';
-
-		isSvelteProject = files.some(
-			(file: any) =>
-				file.name === 'svelte.config.js' || file.name === 'svelte.config.cjs'
-		);
-		isSvelteFile = active.endsWith('.svelte');
-		const isSvelte = isSvelteProject && isSvelteFile;
-
-		if (!isSvelte && isCompleterAdded) {
-			const index = editor.completers.indexOf(svelteCompleter);
-			if (index > -1) editor.completers.splice(index, 1);
-			isCompleterAdded = false;
-			console.log('[+] Svelte Completer Removed');
-		}
-
-		if (isSvelte && !isCompleterAdded) {
-			editor.completers.push(svelteCompleter);
-			isCompleterAdded = true;
-			console.log('[+] Svelte Completer Added!');
-		}
-	} catch (e) {
-		console.error('Failed to read project', e);
-	}
-}
+const editor = editorManager.editor as any;
 
 class AcodePlugin {
 	public baseUrl: string | undefined;
+	svelte?: any;
+	typescript?: any;
+	javascript?: any;
+	sass?: any;
+	debounceTimer?: number;
+
+	constructor() {
+		this.initAutocomplete = this.initAutocomplete.bind(this);
+		this.debouncedInitAutocomplete = this.debouncedInitAutocomplete.bind(this);
+	}
+
+	async isSvelte(): Promise<boolean> {
+		try {
+			const active = editorManager.activeFile?.name;
+			return active.endsWith('.svelte') ?? false;
+		} catch (e) {
+			console.error('Failed to load check files: ', e);
+			return false;
+		}
+	}
+
+	checkTs(): boolean {
+		const content = editor.getValue();
+		return /lang\s*=\s*["'](ts|typescript)["']/g.test(content);
+	}
+
+	addCompleter(completer: any, label: string): void {
+		if (!editor.completers.includes(completer)) {
+			try {
+				editor.completers.push(completer);
+				console.log(`[/] ${label} Completer Added`);
+			} catch (e) {
+				console.log(`[*] Unable to add ${label} Completer`, e);
+			}
+		}
+	}
+
+	removeCompleter(completer: any, label: string) {
+		if (!editor.completers.includes(completer)) return;
+		const index = editor.completers.indexOf(completer);
+		if (index > -1) editor.completers.splice(index, 1);
+		console.log(`[/] Removed ${label} Svelte Autocompleter`);
+	}
+
+	async initAutocomplete(): Promise<void> {
+		const isSvelte = await this.isSvelte();
+		const isTs = this.checkTs();
+
+		if (!isSvelte) {
+			this.removeCompleter(this.svelte, 'Svelte');
+			this.removeCompleter(this.javascript, 'Javascript');
+		}
+		if (!isTs) this.removeCompleter(this.typescript, 'Typescript');
+
+		if (isSvelte) {
+			this.addCompleter(this.svelte, 'Svelte');
+			this.addCompleter(this.javascript, 'Javascript');
+		}
+		if (isTs) this.addCompleter(this.typescript, 'Typescript');
+	}
+
+	debouncedInitAutocomplete() {
+		if (this.debounceTimer) clearTimeout(this.debounceTimer);
+		this.debounceTimer = setTimeout(() => this.initAutocomplete(), 200);
+	}
 
 	async init(
 		$page: WCPage,
-		cacheFile: any,
-		cacheFileUrl: string
+		_cacheFile: any,
+		_cacheFileUrl: string
 	): Promise<void> {
-		await loadCompletions(this.baseUrl);
-		editorManager.on('switch-file', svelteStatus);
-		editorManager.on('file-content-changed', svelteStatus);
-		await svelteStatus();
+		this.svelte = await loadSvelte(this.baseUrl);
+		this.typescript = await loadTs(this.baseUrl);
+		this.javascript = await loadJs(this.baseUrl);
+
+		await this.initAutocomplete();
+
+		editorManager.on('switch-file', this.debouncedInitAutocomplete);
+		editorManager.on('file-content-changed', this.debouncedInitAutocomplete);
 	}
 
 	async destroy() {
-		editorManager.off('switch-file', svelteStatus);
-		editorManager.off('file-content-changed', svelteStatus);
-		const index = editor.completers.indexOf(svelteCompleter);
-		if (index > -1) editor.completers.splice(index, 1);
+		editorManager.off('switch-file', this.debouncedInitAutocomplete);
+		editorManager.off('file-content-changed', this.debouncedInitAutocomplete);
+		this.removeCompleter(this.svelte, 'Svelte');
+		this.removeCompleter(this.typescript, 'Typescript');
+		this.removeCompleter(this.javascript, 'Javascript');
 	}
 }
 
@@ -96,10 +104,7 @@ if (window.acode) {
 			$page: WCPage,
 			{ cacheFileUrl, cacheFile }: any
 		) => {
-			if (!baseUrl.endsWith('/')) {
-				baseUrl += '/';
-			}
-			acodePlugin.baseUrl = baseUrl;
+			acodePlugin.baseUrl = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
 			await acodePlugin.init($page, cacheFile, cacheFileUrl);
 		}
 	);
