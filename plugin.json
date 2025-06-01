@@ -6,14 +6,23 @@
 	"readme": "readme.md",
 	"icon": "icon.png",
 	"files": [
-	  "src/javascript.json",
-	  "src/svelte.json",
-	  "src/typescript.json"
+		"src/completers/javascript.json",
+		"src/completers/svelte.json",
+		"src/completers/typescript.json",
+		"src/worker.js",
+		"usage.gif"
 	],
 	"minVersionCode": 290,
 	"license": "MIT",
 	"changelogs": "changelogs.md",
-	"keywords": ["svelte", "autocomplete", "sveltekit", "typescript", "javascript", "intellisense"],
+	"keywords": [
+		"svelte",
+		"autocomplete",
+		"sveltekit",
+		"typescript",
+		"javascript",
+		"intellisense"
+	],
 	"price": 0,
 	"author": {
 		"name": "KnxTr",

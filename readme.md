@@ -12,14 +12,19 @@ A lightweight Acode plugin that provides auto-completion for Svelte components, 
 
 3. Start typing in the editor, and you’ll see Svelte-specific completions.
 
+Preview:
+
+![Preview](usage.gif)
+
 ---
 
 🌟 Features
 
-Automatic Detection
-Activates only in Svelte projects and on .svelte files, minimizing performance impact.
+###### Automatic Detection
+* Activates only in any .svelte files, minimizing the performance impact.
+* Specific completers such as Javascript/Typescript only activates on their appropriate tags.
 
-Silent & Lightweight
+###### Silent & Lightweight
 Runs in the background without interfering with the core editor features.
 
 ---
@@ -34,6 +39,8 @@ Github Repository: [https://github.com/Kanester/svelteAutocomplete](https://gith
 
 [!] Desclaimer
 This is currently under development with limited scope; might be unstable anytime.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M01DBJX4)
 
 ---
 
