@@ -1,32 +1,28 @@
 {
-	"id": "knxtr.svelte.autocomplete",
-	"name": "Svelte Autocomplete",
+	"id": "mingokrb.sm64coopdx.autocomplete",
+	"name": "sm64coopdx Lua Autocomplete",
 	"main": "main.js",
-	"version": "1.2.0",
+	"version": "1.3.2",
 	"readme": "readme.md",
 	"icon": "icon.png",
 	"files": [
-		"src/completers/javascript.json",
-		"src/completers/svelte.json",
-		"src/completers/typescript.json",
-		"src/worker.js",
-		"usage.gif"
+		"src/completers/functions.json",
+		"src/completers/contants.json",
+		"src/completers/structs.json",
+		"src/worker.js"
 	],
 	"minVersionCode": 290,
 	"license": "MIT",
 	"changelogs": "changelogs.md",
 	"keywords": [
-		"svelte",
+		"sm64coopdx",
 		"autocomplete",
-		"sveltekit",
-		"typescript",
-		"javascript",
-		"intellisense"
+		"lua"
 	],
 	"price": 0,
 	"author": {
-		"name": "KnxTr",
-		"email": "kiovmryphll@gmail.com",
-		"github": "Kanester"
+		"name": "mingokrb",
+		"email": "",
+		"github": "mingokrb"
 	}
 }

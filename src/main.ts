@@ -1,9 +1,8 @@
 import plugin from '../plugin.json';
 import { SvCache } from './cache';
 
-import svelte from './completers/svelte.json';
-import javascript from './completers/javascript.json';
-import typescript from './completers/typescript.json';
+import functions from './completers/functions.json';
+import constants from './completers/constants.json';
 
 const editor = editorManager.editor as any;
 
@@ -80,18 +79,14 @@ class AcodePlugin {
 		const style = this.cache.get('style');
 
 		const toEnable = new Set<string>();
-
-		// Core Svelte support
-		if (editorManager.activeFile.name.endsWith('.svelte')) {
-			toEnable.add('svelte');
-		}
-
-		// Check if inside <script>
-		if (script && row >= script.open && row <= script.close) {
-			if (['ts', 'typescript'].includes(script.lang)) {
-				toEnable.add('typescript');
-				toEnable.add('javascript');
-			}
+		
+		if (editorManager.activeFile.name.endsWith('.lua')) {
+			toEnable.add('functions');
+			toEnable.add('constants');
+		
+			// Check if inside <script>
+			//if (script && row >= script.open && row <= script.close) {
+			//}
 		}
 
 		// Future style handling can go here
@@ -143,15 +138,8 @@ class AcodePlugin {
 		_cacheFileUrl: string
 	): Promise<void> {
 		// Init completers
-		this.setCompleter('svelte', loadCompleter(plugin.id, 'Svelte', svelte));
-		this.setCompleter(
-			'javascript',
-			loadCompleter(plugin.id, 'JavaScript', javascript)
-		);
-		this.setCompleter(
-			'typescript',
-			loadCompleter(plugin.id, 'TypeScript', typescript)
-		);
+		this.setCompleter('functions', loadCompleter(plugin.id, 'functions', functions));
+		this.setCompleter('constants', loadCompleter(plugin.id, 'constants', constants));
 		// Add your css/sass later if needed
 
 		// Start worker
