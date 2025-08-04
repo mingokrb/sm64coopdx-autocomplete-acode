@@ -1,6 +1,6 @@
 # sm64coopdx Lua Autocomplete (for Acode)
 
-Autocompletion system based on the [**sm64coopdx Lua API**](https://github.com/coop-deluxe/sm64coopdx/docs/lua.md/) for Acode, a mobile code editor, to help mobile modders.
+Autocompletion system based on the [**sm64coopdx Lua API**](https://github.com/coop-deluxe/sm64coopdx/blob/main/docs/lua/lua.md) for Acode, a mobile code editor, to help mobile modders.
 > ⚠️ IMPORTANT: This only covers the `main` releases of the game and doesn't include any new stuff from `dev` builds — if you're using a developing (unreleased) version of the game, **this plugin WILL lack the newest available functions and constants of it.**
 
 * This plugin was built and tested with **Acode v1.11.4 (962)**. You may need this or a higher version for it to work properly.
