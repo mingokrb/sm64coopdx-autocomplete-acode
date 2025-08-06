@@ -3,6 +3,7 @@ import { SvCache } from './cache';
 
 import functions from './completers/functions.json';
 import constants from './completers/constants.json';
+import structs from './completers/structs.json';
 
 const editor = editorManager.editor as any;
 
@@ -83,6 +84,7 @@ class AcodePlugin {
 		if (editorManager.activeFile.name.endsWith('.lua')) {
 			toEnable.add('functions');
 			toEnable.add('constants');
+			toEnable.add('structs');
 		
 			// Check if inside <script>
 			//if (script && row >= script.open && row <= script.close) {
@@ -140,6 +142,7 @@ class AcodePlugin {
 		// Init completers
 		this.setCompleter('functions', loadCompleter(plugin.id, 'functions', functions));
 		this.setCompleter('constants', loadCompleter(plugin.id, 'constants', constants));
+		this.setCompleter('structs', loadCompleter(plugin.id, 'structs', structs));
 		// Add your css/sass later if needed
 
 		// Start worker

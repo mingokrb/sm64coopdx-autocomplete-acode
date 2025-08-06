@@ -1,5 +1,11 @@
 # Changelogs
 
+## v1.3.2.1
+This is pretty much a second part of the initial release, seen how much content I missed and is being added here.<br><br>
+Well, enjoy the new stuff!
+### Changes:
+* Added all hooks, structs and globals present in sm64coopdx `v1.3.2`.
+
 ## v1.3.2
 Initial release! 🎉<br><br>
 Each version name of the plugin should be synced with the sm64coopdx version it's being based on.<br><br>

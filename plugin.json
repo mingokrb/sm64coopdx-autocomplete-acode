@@ -2,12 +2,12 @@
 	"id": "mingokrb.sm64coopdx.autocomplete",
 	"name": "sm64coopdx Lua Autocomplete",
 	"main": "main.js",
-	"version": "1.3.2",
+	"version": "1.3.2.1",
 	"readme": "readme.md",
 	"icon": "icon.png",
 	"files": [
 		"src/completers/functions.json",
-		"src/completers/contants.json",
+		"src/completers/constants.json",
 		"src/completers/structs.json",
 		"src/worker.js"
 	],

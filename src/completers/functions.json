@@ -120,6 +120,67 @@
 		"score": 1000
 	},
 
+	{
+		"caption": "hook_behavior",
+		"value": "hook_behavior",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_chat_command",
+		"value": "hook_chat_command",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_event",
+		"value": "hook_event",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_mario_action",
+		"value": "hook_mario_action",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_on_sync_table_change",
+		"value": "hook_on_sync_table_change",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_mod_menu_text",
+		"value": "hook_mod_menu_text",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_mod_menu_button",
+		"value": "hook_mod_menu_button",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_mod_menu_checkbox",
+		"value": "hook_mod_menu_checkbox",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_mod_menu_slider",
+		"value": "hook_mod_menu_slider",
+		"meta": "function",
+		"score": 1000
+	},
+	{
+		"caption": "hook_mod_menu_inputbox",
+		"value": "hook_mod_menu_inputbox",
+		"meta": "function",
+		"score": 1000
+	},
+
 
 
 	{
